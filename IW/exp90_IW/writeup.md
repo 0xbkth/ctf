@@ -1,13 +1,3 @@
-$)'txtt5678.01234g67890a23456l89012f45678'01234(67890c23456n89012y45678S01234e67890l23456i89012F45678d01234a67890e23456r89012.45678s01234f67890=23456a01234
-<Buffer 49 57 7b 53 68 6f 63 6b 65 64 2d 66 6f 72 2d 6e 6f 74 68 69 6e 67 21 7d>
-$aa
-<Buffer 49 57 7b 53 68 6f 63 6b 65 64 2d 66 6f 72 2d 6e 6f 74 68 69 6e 67 21 7d>
-$echo '49 57 7b 53 68 6f 63 6b 65 64 2d 66 6f 72 2d 6e 6f 74 68 69 6e 67 21 7d' | xxd -r -p
-[SyntaxError: Unexpected token ILLEGAL]
-$^C      
-root@bkthpc:~/Bureau/CTF/ctf# echo '49 57 7b 53 68 6f 63 6b 65 64 2d 66 6f 72 2d 6e 6f 74 68 69 6e 67 21 7d' | xxd -r -p
-IW{Shocked-for-nothing!}
-
 # Exp90
 
 ## Description
@@ -33,7 +23,7 @@ fs=require('fs')
 a=fs.readFileSync('flag.txt')
 ```
 
-We did not script anything or tried to had the formula used by the interpreter, instead we what we did is try to supply an integer that was interpreted to a number with as many digits as the number of chars in what wanted to be interpreted. And from that, we replaced the number that were output by the letters:
+We did not script anything or tried to get the formula used by the interpreter, instead we what we did is try to supply an integer that was interpreted to a number with as many digits as the number of chars in what wanted to be interpreted. And from that, we replaced the number that were output by the letters:
 
 We ended up with the following
 
